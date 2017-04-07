@@ -1,0 +1,36 @@
+<section class="widget">
+  <ul class="widget-share">
+      <li class="share-item facebook">
+          <a href="http://service.weibo.com/share/share.php?url={{url absolute="true"}}&amp;title={{encode title}}"
+             onclick="window.open(this.href);return false;"><span class="icon-weibo"></span></a>
+      </li>
+    <li class="share-item twitter share-wechat">
+        <a href="javascript:void(0)"><span class="icon-wechat"></span></a>
+        <div class="wechat-qrcode">
+            <span>分享到微信</span>
+            <div></div>
+        </div>
+    </li>
+      <li class="share-item qq">
+          <a href="http://connect.qq.com/widget/shareqq/index.html?url={{url absolute="true"}}&amp;title={{encode title}}"
+             onclick="window.open(this.href);return false;"><span class="icon-qq"></span></a>
+      </li>
+    <li class="share-item google-plus">
+      <a href="https://plus.google.com/share?url={{url absolute="true"}}"
+         onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;"><span class="icon-social-googleplus"></span></a>
+    </li>
+  </ul>
+</section>
+<script type="text/javascript">
+    window.onload = function() {
+        $(".share-wechat").hover(function(){
+            $('.wechat-qrcode').show(300);
+            if($(".wechat-qrcode>div>canvas").length === 0 && typeof $.fn.qrcode == 'function') {
+                var url = "{{url absolute="true"}}";
+                $('.wechat-qrcode>div').qrcode({ width: 150, height: 150, text: url});
+            }
+        }, function(){
+            $('.wechat-qrcode').hide(300);
+        });
+    }
+</script>

@@ -1,0 +1,11 @@
+{
+  "name": "Ghost-Starter",
+  "version": "1.0.0",
+  "description": "Bootstrap 3 theme for Ghost",
+  "homepage": "https://github.com/pengwei1024/ghost-theme-starter",
+  "author": {
+    "name": "舞影凌风",
+    "email": "pengwei1024@gmail.com",
+    "url": "http://apkfuns.com"
+  }
+}

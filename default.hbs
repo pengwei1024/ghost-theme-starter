@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {{! Document Settings }}
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- {{! Page Meta }} -->
+  <title>{{meta_title}}</title>
+  <meta name="description" content="{{meta_description}}" />
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="{{asset "images/favicon.ico"}}">
+  <!-- {{! Styles'n'Scripts }} -->
+  <link rel="stylesheet" type="text/css" href="{{asset "css/screen.min.css"}}" />
+  <link rel="stylesheet" type="text/css" href="{{asset "css/animate.min.css"}}" />
+  <link rel="stylesheet" type="text/css" href="{{asset "css/pace.min.css"}}" />
+  <link rel="stylesheet" type="text/css" href="{{asset "fonts/icons/icons.css"}}" />
+  <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
+
+  {{! Ghost outputs important style and meta data with this tag }}
+  {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+
+  <div class="container">
+
+    {{> "header"}}
+
+    {{! Everything else gets inserted here }}
+    {{{body}}}
+
+    {{> "footer"}}
+
+  </div>
+
+  {{!-- jQuery needs to come before `{{ghost_foot}}` so that jQuery can be used in code injection --}}
+  <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  {{! Ghost outputs important scripts and data with this tag }}
+  {{ghost_foot}}
+
+  <script type="text/javascript" src="{{asset "js/min/jquery.fitvids.min.js"}}"></script>
+  <script type="text/javascript" src="{{asset "js/min/pace.min.js"}}"></script>
+  <script type="text/javascript" src="{{asset "js/min/wow.min.js"}}"></script>
+  {{! The main JavaScript file for Blacklist }}
+  <script type="text/javascript" src="{{asset "js/min/index.min.js"}}"></script>
+
+  {{#is "post"}}
+  <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery-qrcode/1.0.0/jquery.qrcode.min.js"></script>
+  {{/is}}
+
+</body>
+</html>
