@@ -74,7 +74,7 @@ pre {
 code {
   margin: 0 .2rem;
   padding: .2rem .5rem;
-  font-size: 90%;
+  font-size: 85%;
   white-space: nowrap;
   background: rgba(0, 0, 0, 0.04);
   border-radius: 5px;
@@ -86,6 +86,7 @@ pre > code {
   white-space: pre;
   background: transparent;
   border-radius: 0;
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
 }
 
 .site-footer {
