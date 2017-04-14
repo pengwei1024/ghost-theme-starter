@@ -1,0 +1,20 @@
+{{!< default}}
+<main class="site-main wow fadeIn" data-wow-duration=".8s" role="main">
+    <style type="text/css">
+        .error-details {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+        .error-details>h3 {
+            color: #979797;
+            margin-top: 2rem;
+        }
+    </style>
+    <section class="error-details">
+        <embed src="{{asset "images/404.svg"}}" height="100"
+               type="image/svg+xml"
+               pluginspage="http://www.adobe.com/svg/viewer/install/" />
+        <h3 class="error-description">404-页面未找到</h3>
+        <a class="error-link" href="{{@blog.url}}">返回首页 →</a>
+    </section>
+</main>

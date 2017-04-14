@@ -51,7 +51,7 @@ blockquote {
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.8;
-  border-left: 2px solid #275b8c;
+  border-left: 3px solid #275b8c;
 }
 blockquote *:last-child {
   margin: 0;
@@ -76,8 +76,8 @@ code {
   padding: .2rem .5rem;
   font-size: 85%;
   white-space: nowrap;
-  background: rgba(0, 0, 0, 0.04);
-  border-radius: 5px;
+  background: rgba(27,31,35,0.05);
+  border-radius: 3px;
 }
 
 pre > code {
@@ -899,7 +899,7 @@ ul {
 }
 
 ol {
-  list-style: decimal inside;
+  list-style: decimal;
 }
 
 dt,
@@ -1455,32 +1455,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   line-height: 1.2;
 }
 
 h2 {
-  font-size: 3.6rem;
+  font-size: 3.1rem;
   line-height: 1.25;
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 2.7rem;
   line-height: 1.3;
 }
 
 h4 {
-  font-size: 2.8rem;
+  font-size: 2.3rem;
   line-height: 1.35;
 }
 
 h5 {
-  font-size: 2.4rem;
+  font-size: 2.0rem;
   line-height: 1.5;
 }
 
 h6 {
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   letter-spacing: 0;
   line-height: 1.4;
 }
@@ -1533,6 +1533,10 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
   width: 100%;
   max-width: 80rem;
   margin: 0 auto;
+}
+
+.site-main article ul, .site-main article ol {
+    padding-left: 3rem;
 }
 
 .site-hero {
@@ -1695,6 +1699,11 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
 .post-header-featured .post-title {
   max-width: 88%;
 }
+
+.post-title, .post-header>h2, .post-content>p {
+    word-break: break-all;
+}
+
 .post-header-featured .featured-label {
   width: 3rem;
   height: 3rem;
@@ -1754,4 +1763,17 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
 .back-to-top:hover {
     background-position: 0 -52px;
     opacity: 1;
+}
+
+@media screen and (max-width: 480px) {
+    .post-title {
+        font-size: 2.5rem;
+    }
+    .back-to-top {
+        right: 1.5rem;
+        bottom: 1.5rem;
+    }
+    .read-next-story a {
+        word-break: break-all;
+    }
 }
