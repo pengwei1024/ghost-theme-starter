@@ -39,6 +39,21 @@
 
   {{!-- jQuery needs to come before `{{ghost_foot}}` so that jQuery can be used in code injection --}}
   <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript">
+      $(function () {
+          $(window).scroll(function () {
+              if ($(window).scrollTop() > 100) {
+                  $(".back-to-top").fadeIn(800);
+              } else {
+                  $(".back-to-top").fadeOut(800);
+              }
+          });
+          $(".back-to-top").click(function () {
+              $('body,html').animate({scrollTop: 0}, 600);
+              return false;
+          });
+      });
+  </script>
   {{! Ghost outputs important scripts and data with this tag }}
   {{ghost_foot}}
 
