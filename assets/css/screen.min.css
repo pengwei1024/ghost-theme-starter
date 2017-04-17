@@ -47,11 +47,12 @@ blockquote {
   margin: 0;
   padding: 1rem 0 1rem 3rem;
   color: #66727D;
-  font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
+  font-family: inherit;
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.8;
-  border-left: 3px solid #275b8c;
+  border-left: 5px solid #b4b4b4;
+   background: #f7f7f7;
 }
 blockquote *:last-child {
   margin: 0;
@@ -74,9 +75,10 @@ pre {
 code {
   margin: 0 .2rem;
   padding: .2rem .5rem;
-  font-size: 85%;
+  font-size: 90%;
   white-space: nowrap;
-  background: rgba(27,31,35,0.05);
+  background: #f6f6f6;
+   color: #657b83;
   border-radius: 3px;
 }
 
@@ -86,7 +88,8 @@ pre > code {
   white-space: pre;
   background: transparent;
   border-radius: 0;
-  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+    font-size: 13px;
+  font-family: Menlo,Monaco,Consolas,Courier New,monospace;
 }
 
 .site-footer {
@@ -920,7 +923,8 @@ hr {
 
 mark,
 .highlight {
-  background: #FFF198;
+    background-color: #fcf8e3;
+    padding: .2em;
 }
 
 .navigation-toggle-container {
