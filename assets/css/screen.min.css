@@ -77,8 +77,8 @@ code {
   padding: .2rem .5rem;
   font-size: 90%;
   white-space: nowrap;
-  background: #f6f6f6;
-   color: #657b83;
+  color: #c7254e;
+  background-color: #f9f2f4;
   border-radius: 3px;
 }
 
@@ -88,8 +88,9 @@ pre > code {
   white-space: pre;
   background: transparent;
   border-radius: 0;
-    font-size: 13px;
+  font-size: 13px;
   font-family: Menlo,Monaco,Consolas,Courier New,monospace;
+  line-height: 0.7rem;
 }
 
 .site-footer {
