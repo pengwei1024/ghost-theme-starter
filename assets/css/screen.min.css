@@ -1430,21 +1430,22 @@ form {
 
 table {
   width: 100%;
+  border-spacing: 2px;
+  border-color: grey;
+  display: table;
+  border-spacing: 0;
+  border-collapse: collapse;
 }
 
 th,
 td {
-  border-bottom: .1rem solid #E9EBED;
-  padding: 1.2rem 1.5rem;
-  text-align: left;
+    border: 1px solid #dfe2e5;
+    padding: 6px 13px;
+    text-align: left;
+    display: table-cell;
 }
-th:first-child,
-td:first-child {
-  padding-left: 0;
-}
-th:last-child,
-td:last-child {
-  padding-right: 0;
+table tr:nth-child(2n) {
+    background: #f5f5f5;
 }
 
 p {
