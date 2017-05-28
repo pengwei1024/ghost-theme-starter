@@ -19,7 +19,7 @@
   <link rel="stylesheet" type="text/css" href="{{asset "fonts/icons/icons.css"}}" />
   <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
   {{#is "post"}}
-  <link rel="stylesheet" href="{{asset "css/highlight.css"}}" />
+   <link rel="stylesheet" href="{{asset "css/highlight.css"}}" />
   {{/is}}
   {{! Ghost outputs important style and meta data with this tag }}
   {{ghost_head}}
@@ -67,12 +67,9 @@
   <!--二维码生成-->
   <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery-qrcode/1.0.0/jquery.qrcode.min.js"></script>
   <!-- 代码高亮 -->
-  <script type="text/javascript" src="http://apps.bdimg.com/libs/prettify/r298/prettify.js"></script>
+  <script type="text/javascript" src="http://apps.bdimg.com/libs/highlight.js/9.1.0/highlight.min.js"></script>
   <script type="text/javascript">
-    jQuery(document).ready(function($) {
-        $('pre>code').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
-        prettyPrint();
-    });
+      hljs.initHighlightingOnLoad();
   </script>
   {{/is}}
   {{#is "page"}}

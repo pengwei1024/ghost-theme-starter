@@ -78,7 +78,7 @@ code {
   font-size: 90%;
   white-space: nowrap;
   color: #c7254e;
-  background-color: #f9f2f4;
+  background-color: #f6f8fa;
   border-radius: 3px;
 }
 
@@ -90,7 +90,6 @@ pre > code {
   border-radius: 0;
   font-size: 13px;
   font-family: Menlo,Monaco,Consolas,Courier New,monospace;
-  line-height: 0.7rem;
 }
 
 .site-footer {
@@ -1537,7 +1536,7 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
 
 .site-main {
   width: 100%;
-  max-width: 80rem;
+  max-width: 76rem;
   margin: 0 auto;
 }
 

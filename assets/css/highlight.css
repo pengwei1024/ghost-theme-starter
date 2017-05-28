@@ -1,79 +1,72 @@
-.prettyprint {
-    background: #2f3640;
-    font-family: Menlo, Bitstream Vera Sans Mono, DejaVu Sans Mono, Monaco, Consolas, monospace;
-    border: 0 !important
+
+/**
+ * GitHub Gist Theme
+ * Author : Louis Barranqueiro - https://github.com/LouisBarranqueiro
+ */
+
+.hljs {
+    display: block;
+    background: #f6f8fa;
+    padding: 0.5em;
+    color: #333333;
+    overflow-x: auto;
 }
 
-.pln {
-    color: #e6e9ed
+.hljs-comment,
+.hljs-meta {
+    color: #969896;
 }
 
-ol.linenums {
-    margin-top: 0;
-    margin-bottom: 0;
-    color: #656d78
+.hljs-string,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-strong,
+.hljs-emphasis,
+.hljs-quote {
+    color: #df5000;
 }
 
-li.L0, li.L1, li.L2, li.L3, li.L4, li.L5, li.L6, li.L7, li.L8, li.L9 {
-    padding-left: 1em;
-    background-color: #2f3640;
-    list-style-type: decimal
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-type {
+    color: #a71d5d;
 }
 
-@media screen {
-    .str {
-        color: #ffce54
-    }
+.hljs-literal,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-attribute {
+    color: #0086b3;
+}
 
-    .kwd {
-        color: #f92672;
-    }
+.hljs-section,
+.hljs-name {
+    color: #63a35c;
+}
 
-    .com {
-        color: #656d78
-    }
+.hljs-tag {
+    color: #333333;
+}
 
-    .typ {
-        color: #4fc1e9
-    }
+.hljs-title,
+.hljs-attr,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo {
+    color: #795da3;
+}
 
-    .lit {
-        color: #E0C99A
-    }
+.hljs-addition {
+    color: #55a532;
+    background-color: #eaffea;
+}
 
-    .pun {
-        color: #e6e9ed
-    }
+.hljs-deletion {
+    color: #bd2c00;
+    background-color: #ffecec;
+}
 
-    .opn {
-        color: #e6e9ed
-    }
-
-    .clo {
-        color: #e6e9ed
-    }
-
-    .tag {
-        color: #ed5565
-    }
-
-    .atn {
-        color: #a0d468
-    }
-
-    .atv {
-        color: #ffce54
-    }
-
-    .dec {
-        color: #ac92ec
-    }
-
-    .var {
-        color: #e6e9ed
-    }
-
-    .fun {
-        color: #e6e9ed
-    }
+.hljs-link {
+    text-decoration: underline;
 }
