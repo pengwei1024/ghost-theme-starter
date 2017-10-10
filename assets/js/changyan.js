@@ -64,7 +64,7 @@
         };
 
         var ver = + new Date() + window.Math.random().toFixed(16);
-        var url = 'assets/js/version-v4.js?' + ver;
+        var url = '/assets/js/version-v4.js?' + ver;
         loadJs(url);
     };
     createNs();
