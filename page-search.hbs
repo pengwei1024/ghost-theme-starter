@@ -1,8 +1,26 @@
 {{!< default}}
 <main class="site-main wow fadeIn" data-wow-duration=".8s" role="main">
+    <style type="text/css">
+        form>input[type='submit'] {
+            padding: 6px 12px;
+            font-size: 14px;
+            display: block;
+            background: #275b8c;
+            border-radius: 4px;
+            color: #fff;
+            text-shadow: 0 -1px 0 rgba(0,0,0,.2);
+            line-height: 1.42857143;
+            box-shadow: none;
+            border:none;
+            cursor: pointer;
+        }
+        #results {
+            min-height: 200px;
+        }
+    </style>
     <form>
         <input type="text" id="search-field" placeholder="Search"/>
-        <input type="submit" value="search">
+        <input type="submit" value="开始搜索">
     </form>
     <section id="results"></section>
     <script type="text/javascript">
@@ -12,7 +30,7 @@
                     results: "#results",
                     onKeyUp: true,
                     info_template : "<p>共找到: \{{amount}} 篇文章</p>",
-                    result_template:"<a href='{{@blog.url}}/\{{link}}'><p><h2>\{{title}}</h2></p></a>"
+                    result_template:"<li><a href='{{@blog.url}}/\{{link}}'>\{{title}}</a></li>"
                 });
             });
         }
