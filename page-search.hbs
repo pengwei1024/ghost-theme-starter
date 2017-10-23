@@ -1,0 +1,20 @@
+{{!< default}}
+<main class="site-main wow fadeIn" data-wow-duration=".8s" role="main">
+    <form>
+        <input type="text" id="search-field" placeholder="Search"/>
+        <input type="submit" value="search">
+    </form>
+    <section id="results"></section>
+    <script type="text/javascript">
+        window.onload = function () {
+            $.getScript('{{asset "js/min/jquery.ghostHunter.min.js"}}', function (data, textStatus, jqxhr) {
+                $("#search-field").ghostHunter({
+                    results: "#results",
+                    onKeyUp: true,
+                    info_template : "<p>共找到: \{{amount}} 篇文章</p>",
+                    result_template:"<a href='{{@blog.url}}/\{{link}}'><p><h2>\{{title}}</h2></p></a>"
+                });
+            });
+        }
+    </script>
+</main>
