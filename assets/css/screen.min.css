@@ -75,7 +75,7 @@ pre {
 code {
   margin: 0 .2rem;
   padding: .2rem .5rem;
-  font-size: 90%;
+  /*font-size: 90%;*/
   white-space: nowrap;
   color: #c7254e;
   background-color: #f6f8fa;
@@ -1468,11 +1468,14 @@ h1 {
 h2 {
   font-size: 3.1rem;
   line-height: 1.25;
+
 }
 
 h3 {
   font-size: 2.7rem;
   line-height: 1.3;
+   border-bottom: 1px solid #ececec;
+    padding-bottom: 12px;
 }
 
 h4 {
